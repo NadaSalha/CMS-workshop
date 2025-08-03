@@ -55,28 +55,3 @@ document.onreadystatechange = () => {
     });
   }
 };
-
-
-
-// document.onreadystatechange =() =>{
-
-//   if(document.readyState === 'complete'){
-//     const xhr = new XMLHttpRequest();
-
-//     xhr.open('POST','/create-post', true);
-//     xhr.setRequestHeader('Content-Type' , 'application/json');
-//     xhr.onreadystatechange = ()=>{
-//       if(xhr.readyState === 4 && xhr.status === 200){
-//         console.log('xhr status '+xhr.responseText);
-//     const blogText = document.getElementById('blogText').value;
-
-//     alert(blogText);
-//     xhr.send(blogText);
-//       }
-//     }
-
-    
-//   }
-// }
-
-
