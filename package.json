@@ -1,0 +1,24 @@
+{
+  "name": "girls-ws",
+  "version": "1.0.0",
+  "description": "A simple Node.js project for practicing backend development and building basic web services.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-CA/node-girls-ws.git"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "express"
+  ],
+  "author": "NadaSalha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-CA/node-girls-ws/issues"
+  },
+  "homepage": "https://github.com/GSG-CA/node-girls-ws#readme"
+}
