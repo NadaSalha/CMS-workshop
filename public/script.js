@@ -49,8 +49,14 @@ document.onreadystatechange = () => {
           xhr.send();
         }
       }
-
-      xhrPost.send(blogText);
+      if(blogText === '') {
+        alert('Please enter a blog post');
+        return;
+      }else{
+        alert('Blog post submitted successfully');
+        xhrPost.send(blogText);
+      }
+      
 
     });
   }
