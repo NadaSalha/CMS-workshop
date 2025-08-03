@@ -36,7 +36,10 @@ document.onreadystatechange = () => {
     form.addEventListener('submit',(e)=>{
       e.preventDefault();
       const blogText = document.getElementById('blogText').value;
-
+      if(blogText === '') {
+        alert('Please enter a blog post');
+        return;
+      }
       const xhrPost = new XMLHttpRequest();
 
       xhrPost.open('POST','/create-post',true);
@@ -49,14 +52,8 @@ document.onreadystatechange = () => {
           xhr.send();
         }
       }
-      if(blogText === '') {
-        alert('Please enter a blog post');
-        return;
-      }else{
-        alert('Blog post submitted successfully');
-        xhrPost.send(blogText);
-      }
-      
+   
+      xhrPost.send(blogText);
 
     });
   }
